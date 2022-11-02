@@ -1,0 +1,145 @@
+/*Imports*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=ZCOOL+QingKe+HuangYou&display=swap");
+
+/*Universal*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+}
+
+/*Layout*/
+
+article {
+  min-height: 100vh;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Scorecard*/
+
+.scorecard {
+  min-block-size: 30rem;
+  min-inline-size: 20rem;
+  background-color: rgb(27 27 113);
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  border-radius: 0.625rem;
+}
+
+.scorecard h1 {
+  font-size: 3.5rem;
+}
+
+.game-score {
+  gap: 5rem;
+}
+
+.ind-score {
+  height: 25rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ind-score h2 {
+  font-size: 2.5rem;
+}
+
+.score-background {
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  min-block-size: 6rem;
+  min-inline-size: 6rem;
+  border-radius: 0.25rem;
+  background-color: rgb(0 0 0);
+  color: rgb(192 104 104);
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+.score-btns {
+  gap: 0.5rem;
+}
+
+.score-btns button {
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-color: #fff;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  padding: 0.25rem;
+}
+
+.reset-btn {
+  font-size: 1.25rem;
+  border: solid #fff 5px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/*Media Queries*/
+
+@media (min-width: 980px) {
+  .scorecard {
+    min-inline-size: 60rem;
+  }
+
+  .scorecard h1 {
+    font-size: 6rem;
+  }
+
+  .game-score {
+    gap: 8rem;
+  }
+
+  .ind-score {
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    max-block-size: 18rem;
+  }
+
+  .ind-score h2 {
+    font-size: 3rem;
+  }
+
+  .score-background {
+    min-inline-size: 8.5rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .score-btns button {
+    color: #fff;
+    border-radius: 0.25rem;
+    background-color: inherit;
+    padding: 0.5rem;
+  }
+}
+
+/*Utilities*/
+.flex {
+  display: flex;
+}
